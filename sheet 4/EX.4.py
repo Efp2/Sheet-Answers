@@ -1,8 +1,18 @@
-import matplotlib.pyplot as plt
-import numpy as np
-x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
-y = np.array([99,86,87,88,111,86,103,87,9 4,78,77,85,86])
-colors = np.array([0, 10, 20, 30, 40, 45, 50,55, 60, 70, 80, 90, 100])
-plt.scatter(x, y, c=colors,cmap='viridis')
-plt.colorbar()
-plt.show()
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 21 05:25:29 2025
+
+@author: 𝐇𝐀𝐌𝐎𝐎𝐃
+"""
+
+def average(*numbers):
+    if not numbers:
+        return 0
+    sum_of_num = sum(numbers)
+    
+    count_of_num = len(numbers)
+    
+    return sum_of_num / count_of_num
+
+z=average(30, 45, 17, 23, 104)
+print(z)
